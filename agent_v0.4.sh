@@ -245,7 +245,7 @@ patch_list() {
 					if [[ $user_input == 'n' ]]; then
 						patch_list
 					elif [[ $user_input == 'y' ]]; then
-						while true; do
+						# while true; do
 						echo "Updating $low_vulns"
 						yum update --advisory "$low_vulns"
 					else
